@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ゆらのブログ</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Noto Sans JP", sans-serif;   
+            }
+
+            body{
+                background-color:#fafafa;
+                color:#333
+            }
+
+            .header{
+                background-color: #333;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em 2em;
+            }
+
+            .logo{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .nav-links{
+                list-style: none;
+                display: flex;
+            }
+
+            .nav-links li{
+                margin-left: 1.5em;
+            }
+
+            .nav-links a{
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            .nav-links a:hover{
+                color: #F091A6;
+                text-decoration: underline;
+            }
+
+            .hero{
+                text-align: center;
+                background: linear-gradient(to bottom right, #F9D3E3, #f9d3e3);
+                padding: 5em 1em;
+            }
+
+            .hero h1{
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+
+            .hero p{
+                color: #555;
+            }
+            
+            .about,.blog-list{
+                max-width: 800px;
+                margin: 3em auto;
+                padding: 0 1em;
+            }
+
+            .about h2,.blog-list h2{
+                margin-bottom: 0.5em;
+                color: #444;
+                border-left: 4px solid #F091A6;
+                padding-left: 0.5em;
+            }
+
+            .about p{
+                line-height: 1.8;
+                margin-top: 0.5em;
+            }
+
+            .blog-list ul{
+                list-style: none;
+                margin-top: 1em;
+            }
+
+            .blog-list li{
+                margin: 0.5em 0;
+            }
+
+            .blog-list a{
+                color: #333;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+
+            .blog-list a:hover{
+                color: #F091A6;
+                margin-left: 0.3em;
+            }
+
+            .footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 1em;
+                margin-top: 3em;
+                font-size: 0.9em;
+            }
+
+            @media(max-width:600px){
+                .header{
+                    flex-direction: colimn;
+                    text-align: center;
+                }
+
+                .nav-links{
+                    flex-direction: column;
+                    margin-top: 0.5em;
+                }
+
+                .nav-links li{
+                    margin: 0.5em 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">Yura's Blog</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="">ホーム</a></li>
+                    <li><a href="">プロフィール</a></li>
+                    <li><a href="">ブログ</a></li>
+                    <li><a href="">お問合せ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>ゆらのブログ</h1>
+            <p>ただのひきこもりのつぶやき。</p>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+            名前はゆら。好きなことが多すぎるのが悩み。
+            <br>
+            Webデザインを勉強中の元美容師。
+            </p>
+        </section>
+
+        <section class="blog-list">
+            <h2>最新の日記</h2>
+            <ul>
+                <li><a href="2025.10.06..html">▶ 2025.10.06.| ブログ初日</a></li>
+                <li><a href="2025.10.07..html">▶ 2025.10.07.| 二日目の日記</a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>©2025 Yura's Blog | Powered by GitHub Pages</p>
+        </fooder>
+    </body>
+</html>
