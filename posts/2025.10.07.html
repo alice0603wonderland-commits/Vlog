@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ゆらのブログ/2025.10.07.</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Noto Sans JP",sans-serif;
+            }
+
+            body{
+                background-color: #fafafa;
+                color: #333;
+            }
+
+            .header{
+                background-color: #333;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em 2em;
+            }
+
+            .logo{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .nav-links{
+                list-style: none;
+                display: flex;
+            }
+
+            .nav-links li{
+                margin-left: 1.5em;
+            }
+
+            .nav-links a{
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            .nav-links a:hover{
+                color: #f091a6;
+                text-decoration: underline;
+            }
+
+            .hero{
+                text-align: center;
+                background:linear-gradient(to bottom right,#FFF0FF,#F9B3E3);
+                padding: 5em 1em;
+            }
+
+            .hero h1{
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+
+            .hero p{
+                color: #555;
+            }
+
+            .blog-main{
+                max-width: 800px;
+                margin: 3em auto;
+                padding: 0 1em;
+            }
+
+            .blog-main h1,.blog-main h2{
+                margin-bottom: 0.5em;
+                color: #444;
+                border-left: 4px solid #f091a6;
+                padding-left: 0.5em;
+            }
+
+            .blog-main h1{
+                font-size: 1.5em;
+            }
+
+            .blog-main h2{
+                margin-top: 1.2em;
+            }
+
+            .blog-main p{
+                margin-bottom: 1em;
+                line-height: 1.8;
+            }
+
+            .post-links{
+                text-align: center;
+                margin-top: 2.5em;
+                font-size: 1em;
+            }
+
+            .post-links a{
+                color: #333;
+                text-decoration: none;
+                margin: 0 1em;
+                transition: color 3s;
+            }
+
+            .post-links a:hover{
+                color: #f091a6;
+            }
+
+            .footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 1em;
+                margin-top: 3em;
+                font-size: 0.9em;
+            }
+
+            @media(max-width:600px){
+                .header{
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .nav-links{
+                    flex-direction: column;
+                    margin-top: 0.5em;
+                }
+
+                .nav-links li{
+                    margin: 0.5em 0;
+                }
+
+                .post-links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                }
+
+                .nav-links a{
+                    margin: 0;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="logo">Yura's Blog</nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="profile.html">プロフィール</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html">お問合せ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>ゆらのブログ</h1>
+            <p>ただのひきこもりのつぶやき。</p>
+        </section>
+
+        <section class="blog-main">
+
+               <h1>2025.10.07. | イラストとサブスク</h1>
+               <hr>
+               <h2>イラストの進捗</h2>
+               <p>昨日の話だけど、まふさんのイラストの線を描きたす作業をした。
+               <br>
+                  今回初めて厚塗りをしてみてるけど、ちょっとずつ鮮明になっていく感じが楽しい。
+                 <br>
+                  そらるさんのイラストも下描きができて、良い感じになってきた。
+                 <br>
+                  完成させてカードにして、ライブで仲良い数人に渡せたらいいな。
+                 <br>
+                 <br>
+                 あと関係ないけど、気に入ってたリボンのクリップが壊れてしまった、悲しい。。
+                </p>
+
+                <h2>サブスクの話</h2>
+                <p>U-NEXTの無料期間に入っていたんだけど、昨日で終わってしまった。
+                 <br>
+                 最後に「女神降臨」を見切ることができてうれしい。
+                 <br>
+                 メイクの魅力に気づかされるどころか、結局は昔からの縁じゃないか、この野郎。。
+                 <br>
+                 <br>
+                 今日はNetflixで見たかったドラマを見ている。
+                 <br>
+                 今は「今際の国のアリス」を見てる。
+                 <br>
+                 病んでる時に見たドラマだからか、少ししか覚えてないけど設定が面白い。
+                 <br>
+                 他のサブスクに入っている間に見たいドラマがたくさん入っているから、
+                 <br>
+                 しばらくはネトフリ三昧になりそう。見たらまた感想を書いていこう。
+                </p>
+
+                <h2>振り返り</h2>
+                <p>今日はCSSでの文字の装飾と閉経画像・色の入れ方を勉強した。
+                 <br>
+                 どんどんできることが増えて行ってる気がして楽しい。
+                 <br>
+                 今こうやってタイピングしている時間も、
+                 <br>
+                 htmlを構築している時間も新鮮だしやりたかったことをやってる感じがする。
+                 <br>
+                 今日は背景色を入れることにしたけど、明日は画像を入れてみたいな。
+                 <br>
+                 <br>
+                 すんごい頑張ったんだけどネット遅すぎて、何時間も何もできないままだから、
+                 <br>
+                 見出しの下に線引くのは諦めます。。。
+                 <br>
+                 明日の私、左と下に線引いてくれよ頼んだ。
+               </p>
+        
+
+           <div class="post-links">
+            <a href="2025.10.06.html">◀前の日記＜</a>
+            <a href="index.html">ホーム</a>
+            <a href="2025.10.08.html">次の日記▶</a>
+           </div>
+        </section>
+
+        <footer class="footer">
+            <p>©2025 Yura's Blog | Powered by GitHub Pages</p>
+        </footer>
+    </body>
+</html>

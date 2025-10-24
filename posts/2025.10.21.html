@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>ゆらのブログ</title>
+        <title>ゆらのブログ/2025.10.06.</title>
 
         <style>
             *{
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                font-family: "Noto Sans JP", sans-serif;   
+                font-family: "Noto Sans JP",sans-serif;
             }
 
             body{
-                background-color:#fafafa;
-                color:#333
+                background-color: #fafafa;
+                color: #333;
             }
 
             .header{
@@ -48,13 +48,13 @@
             }
 
             .nav-links a:hover{
-                color: #F091A6;
+                color: #f091a6;
                 text-decoration: underline;
             }
 
             .hero{
                 text-align: center;
-                background: linear-gradient(to bottom right, #FFFDFF, #F9B5E3);
+                background: linear-gradient(to bottom right,#FFFDFF,#F9B5E3);
                 padding: 5em 1em;
             }
 
@@ -66,43 +66,48 @@
             .hero p{
                 color: #555;
             }
-            
-            .about,.blog-list{
+
+            .blog-main{
                 max-width: 800px;
                 margin: 3em auto;
                 padding: 0 1em;
             }
 
-            .about h2,.blog-list h2{
+            .blog-main h1,.blog-main h2{
                 margin-bottom: 0.5em;
                 color: #444;
-                border-left: 4px solid #F091A6;
+                border-left: 4px solid #f091a6;
                 padding-left: 0.5em;
             }
 
-            .about p{
+            .blog-main h1{
+               font-size: 1.5em;
+            }
+
+            .blog-main h2{
+                margin-top: 1.2em;
+            }
+
+            .blog-main p{
+                margin-bottom: 1em;
                 line-height: 1.8;
-                margin-top: 0.5em;
             }
 
-            .blog-list ul{
-                list-style: none;
-                margin-top: 1em;
+            .post-links{
+                text-align: center;
+                margin-top: 2.5em;
+                font-size: 1em;
             }
 
-            .blog-list li{
-                margin: 0.5em 0;
-            }
-
-            .blog-list a{
+            .post-links a{
                 color: #333;
                 text-decoration: none;
-                transition: 0.3s;
+                margin: 0 1em;
+                transition: color 0.3s;
             }
 
-            .blog-list a:hover{
-                color: #F091A6;
-                margin-left: 0.3em;
+            .post-links a:hover{
+                color: #f091a6;
             }
 
             .footer{
@@ -116,7 +121,7 @@
 
             @media(max-width:600px){
                 .header{
-                    flex-direction: colimn;
+                    flex-direction: column;
                     text-align: center;
                 }
 
@@ -128,9 +133,22 @@
                 .nav-links li{
                     margin: 0.5em 0;
                 }
+
+                .post-links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                }
+
+                .post-links a{
+                    margin: 0;
+                }
             }
+
         </style>
-    </head>
+
+    </head>   
+
 
     <body>
         <header class="header">
@@ -138,10 +156,10 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">ホーム</a></li>
-                    <li><a href="">プロフィール</a></li>
+                    <li><a href="profile.html">プロフィール</a></li>
                     <li><a href="blog.html">ブログ</a></li>
-                    <li><a href="">お問合せ</a></li>
-                </ul>
+                    <li><a href="contact.html">お問合せ</a></li> 
+                </ul>            
             </nav>
         </header>
 
@@ -150,25 +168,39 @@
             <p>ただのひきこもりのつぶやき。</p>
         </section>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-            名前はゆら。好きなことが多すぎるのが悩み。
-            <br>
-            Webデザインを勉強中の元美容師。
-            </p>
-        </section>
-
-        <section class="blog-list">
-            <h2>最新の日記</h2>
-             <ul id="latest-posts">
-             </ul>
-             <script src="latest-posts.js"></script>
-             </p>
+        <section class="blog-main">
+            
+              <h1>2025.10.21. | イラスト完成！</h1>
+              <hr>
+              <h2>イラスト進めたよ！</h2>
+              <p>
+                 今日は誕生日イラストを進めた。
+                 <br>
+                 描いたイラストが上手くカードの枠にはまったから
+                 <br>
+                 超超いい感じ！
+                 <br>
+                 原神もイベント以内に攻略できたし大満足！
+                 <br>
+                 急に冷え込んできたから部屋着を冬仕様にしたよ。
+                 <br>
+                 体を冷やさないようにしないと、
+                 <br>
+                 すぐおなか壊すから気を付けます。
+                 <br>
+                 明日はライブで会う後輩ちゃんへのプレゼントを作ります！
+              </p>
+           
+        
+           <div class="post-links">
+            <a href="2025.10.20.html">◀前の日記</a>
+            <a href="index.html">ホーム</a>
+            <a href="2025.10.22.html">次の日記▶</a>
+           </div>
         </section>
 
         <footer class="footer">
             <p>©2025 Yura's Blog | Powered by GitHub Pages</p>
-        </fooder>
-    </body>
+        </footer>
+    </body> 
 </html>
